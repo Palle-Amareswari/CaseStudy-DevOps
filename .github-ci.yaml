@@ -1,0 +1,12 @@
+--- 
+build-java-project: 
+  artifacts: 
+    paths: 
+      - /home/bin
+  only: 
+    - master
+  script: 
+    - "mvn package"
+  stage: build
+stages: 
+  - build
